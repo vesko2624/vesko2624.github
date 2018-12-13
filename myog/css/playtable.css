@@ -2,6 +2,7 @@
 body{
 	
 }
+/*pl1*/
 #player1{
 	float: left;
 }
@@ -27,13 +28,14 @@ body{
 	display: block;
 }	
 #player1lp{
-	transform: translate(30%, -45%);
+	transform: translate(37%, -60%);
 	display: none;
 	text-align: right;
 	border-radius: 10px;
-	background-image: url('../PNG/282x164lp.png');
-	height: 164px;
-	width: 264px;
+	background-color: #e6e600;
+	background-image: linear-gradient(to bottom right, #e6e600, #999900);
+	height: 136px;
+	width: 204px;
 }
 #pl1itemslot1{
 	display: inline-block;
@@ -109,13 +111,14 @@ body{
 	display: block;
 }	
 #player2lp{
-	transform: translate(0, -35%);
+	transform: translate(33%, -45%);
 	display: none;
 	text-align: right;
 	border-radius: 10px;
-	background-image: url('../PNG/282x164lp.png');
-	height: 164px;
-	width: 264px;
+	background-color: #e6e600;
+	background-image: linear-gradient(to bottom right, #e6e600, #999900);
+	height: 136px;
+	width: 204px;
 }
 #pl2itemslot1{
 	display: inline-block;
