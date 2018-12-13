@@ -1,0 +1,184 @@
+
+body{
+	
+}
+#player1hp{
+	background-image: url('../PNG/334X26.png');
+	height: 26px;
+	width: 334px;
+	position: absolute;
+    left:10px;
+    top: 10px;
+}
+#player1ph{
+	background-image: url('../PNG/225x300.png');
+	height: 100px;
+	width: 70px;
+	position: absolute;
+    left:6px;
+    top: 28px;
+}
+#palyer1it{
+	background-image: url('../PNG/items.png');
+	height: 38px;
+	width: 241px;
+	position: absolute;
+    left:72px;
+    top: 1px;
+}
+#player1ph:hover ~ #player1lp{
+
+	display: block;
+}	
+#player1lp{
+	text-align: right;
+	background-image: url('../PNG/282x164lp.png');
+	height: 164px;
+	width: 282px;
+	position: absolute;
+    left:74px;
+    top: 37.8px;
+	
+	display: none;
+}
+#pl1itemslot1{
+	height: 36px;
+	width: 36px;
+	position: absolute;
+	left:1px;
+	top: 1px
+}
+#pl1itemslot2{
+	height: 36px;
+	width: 36px;
+	position: absolute;
+	left:35px;
+	top: 1px
+}
+#pl1itemslot3{
+	height: 36px;
+	width: 36px;
+	position: absolute;
+	left:69px;
+	top: 1px
+}
+#pl1itemslot4{
+	height: 36px;
+	width: 36px;
+	position: absolute;
+	left:103px;
+	top: 1px
+}
+#pl1itemslot5{
+	height: 36px;
+	width: 36px;
+	position: absolute;
+	left:137px;
+	top: 1px
+}
+#pl1itemslot6{
+	height: 36px;
+	width: 36px;
+	position: absolute;
+	left:171px;
+	top: 1px
+}
+#pl1itemslot7{
+	height: 36px;
+	width: 36px;
+	position: absolute;
+	left:205px;
+	top: 1px
+}
+/*pl2*/
+#player2hp{
+	background-image: url('../PNG/334X26.png');
+	height: 26px;
+	width: 334px;
+	position: fixed;
+    right:10px;
+    top: 10px;
+}
+#player2ph{
+	background-image: url('../PNG/225x300.png');
+	height: 100px;
+	width: 70px;
+	position: absolute;
+    right:6px;
+    top: 28px;
+}
+#palyer2it{
+	background-image: url('../PNG/items.png');
+	height: 38px;
+	width: 241px;
+	position: absolute;
+    right:72px;
+    top: 1px;
+}
+#player2ph:hover ~ #player2lp{
+
+	display: block;
+}	
+#player2lp{
+	text-align: right;
+	background-image: url('../PNG/282x164lp.png');
+	height: 164px;
+	width: 282px;
+	position: absolute;
+    right:74px;
+    top: 37.8px;
+	
+	display: none;
+}
+#pl2itemslot1{
+	height: 36px;
+	width: 36px;
+	position: absolute;
+	right:1px;
+	top: 1px
+}
+#pl2itemslot2{
+	height: 36px;
+	width: 36px;
+	position: absolute;
+	right:35px;
+	top: 1px
+}
+#pl2itemslot3{
+	height: 36px;
+	width: 36px;
+	position: absolute;
+	right:69px;
+	top: 1px
+}
+#pl2itemslot4{
+	height: 36px;
+	width: 36px;
+	position: absolute;
+	right:103px;
+	top: 1px
+}
+#pl2itemslot5{
+	height: 36px;
+	width: 36px;
+	position: absolute;
+	right:137px;
+	top: 1px
+}
+#pl12temslot6{
+	height: 36px;
+	width: 36px;
+	position: absolute;
+	right:171px;
+	top: 1px
+}
+#pl2itemslot7{
+	height: 36px;
+	width: 36px;
+	position: absolute;
+	right:205px;
+	top: 1px
+}
+.items{
+	background-image:  url('../PNG/item.png');
+}	

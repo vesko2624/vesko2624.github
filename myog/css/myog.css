@@ -1,0 +1,70 @@
+html {
+    background-color: black;
+}
+body{
+	background-image: url('../PNG/background.png');
+	text-align: center;
+	opacity: 1;
+	transition: 1s opacity;}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}	
+ h1{  	font-family: initial, serif;
+		background: -webkit-linear-gradient(#ffffff,#ffffb3,#ffff99,#ffff33);
+		text-shadow: 0 0 50px rgba(255, 255, 204, 0.5);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-webkit-animation: hue 1s infinite linear;
+}
+
+span{ color: white}
+
+button {
+	background-image: url('../PNG/button.png');
+	background-repeat:no-repeat;
+	background-color: #cccc00;
+	border-color: #b3b300;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: cursive;
+	color: #808000;
+	padding: 20px 100px;
+	outline: none;
+	text-align: center ;}
+button:hover {
+	color: #ffffcc;
+	background-image: url('../PNG/button_h.png');
+	background-repeat:no-repeat;
+	background-color: #e6e600;
+	cursor: pointer;                            
+	box-shadow: 0 0 50px rgba(255, 255, 204, 0.5);
+	outline: none;
+}
+button:activate {
+	outline: none;
+}
+audio{ display: none;}
+
+.login{ margin: auto; padding: 0px; width: 430px; height: 435px; 
+			background-image: url('../PNG/divBG.png'); float: center; }
+			
+.register { margin: auto; padding: 0px; width: 430px; height: 810px; 
+			background-image: url('../PNG/divBG.png'); float: center; }
+			
+.mainmenu{margin: auto; padding: 0px; width: 430px; height: 800px; 
+		background-image: url('../PNG/divBG.png'); float: center;}
+		
+.settings{margin: auto; padding: 0px; width: 430px; height: 550px; 
+		background-image: url('../PNG/divBG.png'); float: center;}	
+
+.ceator{margin: auto; padding: 0px; width: 430px; height: 480px; 
+		background-image: url('../PNG/divBG.png'); float: center;}		
+.mm{
+    height:65px;
+    width:300px;
+}					
+.butt{
+	height:60px;
+	width: 80px;
+}
