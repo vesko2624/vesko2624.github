@@ -25,7 +25,7 @@ body{
 .duelistEnergy{
 	background-image: linear-gradient(#ffff4d ,#ffff66 ,#ffff80);
 	background-size: cover;
-	height: 26px;
+	height: 23px;
 }
 .photo{
 	border-style: ridge;
@@ -78,7 +78,7 @@ body{
 	grid-row: 1;
 }
 #p1DuelistEnergy{
-	border-radius: 50% 15px 50% 15px;
+	border-radius: 60% 15px 60% 15px;
 	grid-column: 1 / span 7;
 	grid-row: 1;
 }
@@ -102,12 +102,12 @@ body{
 	float: right;
 }
 #player2hp{
-	border-radius: 15px 50% 15px 50%;
+	border-radius: 60% 15px 60% 15px;
 	grid-column: 1 / span 7;
 	grid-row: 1;
 }
 #p2DuelistEnergy{
-	border-radius: 15px 50% 15px 50%;
+	border-radius: 15px 60% 15px 60%;
 	grid-column: 1 / span 7;
 	grid-row: 1;
 }
