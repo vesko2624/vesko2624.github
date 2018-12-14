@@ -22,5 +22,5 @@ function BGA(){
 function btt(url) {
 	se.play();
 	url += ".html";
-    setTimeout(function(){ window.location.href = url; }, 500);
+    setTimeout(function(){ location.replace(url); }, 500);
 }
