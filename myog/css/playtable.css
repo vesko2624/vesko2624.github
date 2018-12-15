@@ -23,7 +23,8 @@ body{
 	height: 26px;
 }
 .duelistEnergy{
-	background-image: linear-gradient(#ffff4d ,#ffff66 ,#ffff80);
+	background-image: linear-gradient(#ffff66,#ffff00);
+	box-shadow: 1px 1px 2px #ffff80, 0 0 25px #ffffb3, 0 0 5px #ffffff;
 	background-size: cover;
 	height: 23px;
 }
