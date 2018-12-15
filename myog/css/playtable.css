@@ -23,7 +23,7 @@ body{
 	height: 26px;
 }
 .duelistEnergy{
-	background-image: linear-gradient(#ffff66,#ffff00);
+	background-image: linear-gradient(#ffff99,#ffff00);
 	box-shadow: 1px 1px 2px #ffff80, 0 0 25px #ffffb3, 0 0 5px #ffffff;
 	background-size: cover;
 	height: 23px;
@@ -127,4 +127,59 @@ body{
 	padding-left: 5px;
 	height: 35px;
 	width: 35px;
+}
+
+#p2m0{
+	grid-area: Mzone1;
+}
+#p2m1{
+	grid-area: Mzone2;
+}
+#p2m2{
+	grid-area: Mzone3;
+}
+#p2m3{
+	grid-area: Mzone4;
+}
+#p2m4{
+	grid-area: Mzone5;
+}
+#p2m5{
+	grid-area: Mzone6;
+}
+#p2m6{
+	grid-area: Mzone7;
+}
+#p2m7{
+	grid-area: Mzone8;
+}
+#p2m8{
+	grid-area: Mzone9;
+}
+#p2m9{
+	grid-area: Mzone10;
+}
+
+.mat {
+  display: grid;
+  grid-template-areas:
+	'none none none none none none none none sideDeck1'
+    'none deck Szone1 Szone2 Szone3 Szone4 Szone5 extraDeck1 none'
+	'none none Szone6 Szone7 Szone8 Szone9 Szone10 none none'
+    'ban1 grave1 Mzone1 Mzone2 Mzone3 Mzone4 Mzone5 field1 none'
+	'none none Mzone6 Mzone7 Mzone8 Mzone9 Mzone10 none none'
+	'none none Mzone11 Mzone12 Mzone13 Mzone14 Mzone15 none none'
+    'none field2 Mzone16 Mzone17 Mzone18 Mzone19 Mzone20 grave2 ban2'
+	'none none Szone11 Szone12 Szone13 Szone14 Szone15 none none'
+	'none extraDeck Szone16 Szone17 Szone18 Szone19 Szone20 deck none'
+	'sideDeck2 none none none none none none none none';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.mat> div {
+  background-color: red;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
