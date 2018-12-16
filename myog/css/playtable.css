@@ -5,9 +5,9 @@ body{
 	--picture: url("../PNG/225x300.png");
 }
 /* p1 and p2 */
-#player1ph:hover ~ #player1lp, #player2ph:hover ~ #player2lp{
+#player1ph:hover ~ #player1lp, #player1lp:hover, #player2ph:hover ~ #player2lp, #player2lp:hover{
 	visibility: visible;
-  opacity: 1;
+	opacity: 1;
 }
 .player{
 	padding: 2px;
@@ -16,17 +16,38 @@ body{
 	grid-template-columns: auto auto auto auto auto auto;
 }
 .hp{
+	position: relative;
 	border-style: ridge;
+	border-width: 1.5px;
 	border-color: #808000;
 	background-color: #808000;
 	background-size: cover;
 	height: 26px;
 }
-.duelistEnergy{
-	background-image: linear-gradient(#ffff99,#ffff00);
+#hpglow{
+	--glow-blur: 10px;
+	--glow-color: red;
 	box-shadow: 1px 1px 2px #ffff80, 0 0 25px #ffffb3, 0 0 5px #ffffff;
+	border-radius: inherit;
+	overflow: hidden;
+}
+.duelistEnergy{
+	position: relative;
+	background-image: linear-gradient(#ffff99,#ffff00);
 	background-size: cover;
-	height: 23px;
+	width: 50%;
+	height: 100%;
+	border-radius: 0 !important;
+	border-color: #ffff00;
+	overflow:hidden;
+}
+.duelistEnergy::after{
+	position: absolute;
+	top: -2px;
+	content: "";
+	width: 25px;
+	height: 200%;
+	background-color: #808000;
 }
 .photo{
 	border-style: ridge;
@@ -54,7 +75,7 @@ body{
 
 	visibility: hidden;
 	opacity: 0;
-	transition: visibility 0s, opacity 0.5s linear;
+	transition: visibility 0.5s, opacity 0.5s linear;
 
 	height: 108px;
 	line-height: 108px;
@@ -70,8 +91,14 @@ body{
 }
 
 /* -- Player 1 --*/
-#player1{
+#player1, #p1DuelistEnergy{
 	float: left;
+}
+#p1DuelistEnergy::after{
+	box-shadow: -2px 4px var(--glow-blur) var(--glow-color);
+	left: calc(100% - 20px);
+	transform: rotate(50deg) translateY(-8%);
+	border-left: 1.5px solid red;
 }
 #player1hp, #p1DuelistEnergy{
 	border-radius: 15px 60% 15px 60%;
@@ -94,8 +121,14 @@ body{
 }
 
 /* -- Player 2 -- */
-#player2{
+#player2, #p2DuelistEnergy{
 	float: right;
+}
+#p2DuelistEnergy::after{
+	box-shadow: 2px 4px var(--glow-blur) var(--glow-color);
+	right: calc(100% - 20px);
+	transform: rotate(-50deg) translateY(-8%);
+	border-right: 1.5px solid red;
 }
 #player2hp, #p2DuelistEnergy{
 	border-radius: 60% 15px 60% 15px;
@@ -161,8 +194,8 @@ body{
 }
 
 .mat {
-  display: grid;
-  grid-template-areas:
+	display: grid;
+	grid-template-areas:
 	'none none none none none none none none sideDeck1'
     'none deck Szone1 Szone2 Szone3 Szone4 Szone5 extraDeck1 none'
 	'none none Szone6 Szone7 Szone8 Szone9 Szone10 none none'
@@ -173,13 +206,13 @@ body{
 	'none none Szone11 Szone12 Szone13 Szone14 Szone15 none none'
 	'none extraDeck Szone16 Szone17 Szone18 Szone19 Szone20 deck none'
 	'sideDeck2 none none none none none none none none';
-  grid-gap: 10px;
-  padding: 10px;
+	grid-gap: 10px;
+	padding: 10px;
 }
 
 .mat> div {
-  background-color: red;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+	background-color: red;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
 }
