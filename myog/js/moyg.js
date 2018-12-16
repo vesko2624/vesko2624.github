@@ -8,7 +8,6 @@ played.volume = 0.3;
 if(played.canPlayType('audio/mp3') !== "probably") ras = ".ogg";
 
 async function rand_song(){
-	let missing = 1;
 	let next_song = Math.floor(Math.random() * 15);
 	if(current_song == -1 || current_song != next_song) current_song = next_song;
 	else {
