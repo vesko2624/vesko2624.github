@@ -13,7 +13,6 @@ body{
 	padding: 2px;
 	display: inline-grid;
 	background-color: blue;
-	grid-template-columns: auto auto auto auto auto auto;
 }
 .hp{
 	position: relative;
@@ -39,7 +38,7 @@ body{
 	height: 100%;
 	border-radius: 0 !important;
 	border-color: #ffff00;
-	overflow:hidden;
+	overflow: hidden;
 }
 .duelistEnergy::after{
 	position: absolute;
@@ -64,14 +63,13 @@ body{
 }
 .lifepoints{
 	display: inline-block;
-	border-style: ridge;
 	border-color: #a3a300;
+	border-style: ridge;
 	background-image: linear-gradient(#a3a300, #ffa31a, #686801);
-	color: white;
 	text-shadow: 1px 1px 2px #929204, 0.5px 0.5px #ebeb3c,4px 3px 1px rgb(54, 48, 48) , -3px 3px 30px rgb(219, 0, 82);
 	letter-spacing: 5px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	/* text-shadow: 1px 1px 2px #f1f13d, 0.5px 0.5px #ffff99, 2px 2px 25px #dfdf80; */
+	font: bolder 35px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
 
 	visibility: hidden;
 	opacity: 0;
@@ -81,8 +79,6 @@ body{
 	line-height: 108px;
 	width: 195px;
 	border-radius: 10px;
-	font-size: 35px;
-	font-weight: bolder;
 
 	margin: 5px;
 	padding: 0px 5px;
@@ -92,6 +88,7 @@ body{
 
 /* -- Player 1 --*/
 #player1, #p1DuelistEnergy{
+	left: 0px;
 	float: left;
 }
 #p1DuelistEnergy::after{
@@ -101,27 +98,27 @@ body{
 	border-left: 1.5px solid red;
 }
 #player1hp, #p1DuelistEnergy{
-	border-radius: 15px 60% 15px 60%;
+	border-radius: 15px 60%;
 	grid-column: 1 / span 7;
-	grid-row: 1;
 }
 #player1ph{
 	background-image: var(--picture);
 	grid-column: 1 / span 2;
-	grid-row: 2 / span 2;
+	grid-row: 2 / span 4;
 }
-#palyer1it{
-	/* padding: 2px 3px; */
+#player1it{
 	grid-column: 3 / span 5;
 	grid-row: 2;
 }
 #player1lp{
-	grid-column: 3 / span 4;
-	grid-row: 3;
+	grid-column: 3 / span 5;
+	grid-row: 3 / span 3;
 }
+
 
 /* -- Player 2 -- */
 #player2, #p2DuelistEnergy{
+	right: 0px;
 	float: right;
 }
 #p2DuelistEnergy::after{
@@ -131,24 +128,22 @@ body{
 	border-right: 1.5px solid red;
 }
 #player2hp, #p2DuelistEnergy{
-	border-radius: 60% 15px 60% 15px;
+	border-radius: 60% 15px;
 	grid-column: 1 / span 7;
-	grid-row: 1;
 }
 #player2ph{
 	background-image: var(--picture);
+	/* scaleX shte se mahne !! */
 	transform: scaleX(-1);
 	grid-column: 6 / span 2;
-	grid-row: 2 / span 2;
+	grid-row: 2 / span 4;
 }
-#palyer2it{
-	/* padding: 2px 3px; */
+#player2it{
 	grid-column: 1 / span 5;
-	grid-row: 2;
 }
 #player2lp{
 	grid-column: 2 / span 4;
-	grid-row: 3;
+	grid-row: 3 / span 3;
 }
 
 /* -- Items -- */
@@ -162,57 +157,51 @@ body{
 	width: 35px;
 }
 
-#p2m0{
-	grid-area: Mzone1;
+/* -- MAT -- */
+.mat1v1, .mat2v2{
+	/* margin: auto; */
 }
-#p2m1{
-	grid-area: Mzone2;
-}
-#p2m2{
-	grid-area: Mzone3;
-}
-#p2m3{
-	grid-area: Mzone4;
-}
-#p2m4{
-	grid-area: Mzone5;
-}
-#p2m5{
-	grid-area: Mzone6;
-}
-#p2m6{
-	grid-area: Mzone7;
-}
-#p2m7{
-	grid-area: Mzone8;
-}
-#p2m8{
-	grid-area: Mzone9;
-}
-#p2m9{
-	grid-area: Mzone10;
-}
-
-.mat {
+.side, .sZone, .mZone, .inner{
 	display: grid;
-	grid-template-areas:
-	'none none none none none none none none sideDeck1'
-    'none deck Szone1 Szone2 Szone3 Szone4 Szone5 extraDeck1 none'
-	'none none Szone6 Szone7 Szone8 Szone9 Szone10 none none'
-    'ban1 grave1 Mzone1 Mzone2 Mzone3 Mzone4 Mzone5 field1 none'
-	'none none Mzone6 Mzone7 Mzone8 Mzone9 Mzone10 none none'
-	'none none Mzone11 Mzone12 Mzone13 Mzone14 Mzone15 none none'
-    'none field2 Mzone16 Mzone17 Mzone18 Mzone19 Mzone20 grave2 ban2'
-	'none none Szone11 Szone12 Szone13 Szone14 Szone15 none none'
-	'none extraDeck Szone16 Szone17 Szone18 Szone19 Szone20 deck none'
-	'sideDeck2 none none none none none none none none';
-	grid-gap: 10px;
-	padding: 10px;
+}
+.sZone, .mZone, .inner{
+	grid-template-columns: auto auto auto auto auto auto auto;
+	grid-column-gap: 35px;
+}
+.side{
+	margin: auto;
+	background: red;
+}
+.side div{
+	padding: 6px;
+}
+.mat1v1 .side{
+	padding: 7px 1%;
+	grid-row-gap: 7px;
+	width: 600px;
+	height: calc(450px * 0.6);
+}
+.mat1v1 .side .twoVtwo{
+	display:none;
+}
+.mat2v2 .side{
+	padding: 7px 1%;
+	grid-row-gap: 7px;
+	width: 600px;
+	height: 450px;
+}
+.mat2v2 .side .twoVtwo{
+	display: grid;
 }
 
-.mat> div {
-	background-color: red;
-	text-align: center;
-	padding: 20px 0;
-	font-size: 30px;
+
+.sideDeck{
+	transform: rotate(90deg);
+}
+
+.monster, .spell, #middle{
+	background-image: linear-gradient(to bottom right, yellow, green, yellow);
+}
+.sideDeck, .extraDeck, .deck, .fieldCard, .graveyard{
+	background-image: linear-gradient(to bottom right, cyan, green, blue)
 }
