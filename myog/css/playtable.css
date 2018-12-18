@@ -1,14 +1,19 @@
 *{
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 body{
 	--picture: url("../PNG/225x300.png");
 }
 /* p1 and p2 */
-#player1ph:hover ~ #player1lp, #player1lp:hover, #player2ph:hover ~ #player2lp, #player2lp:hover{
+.show{
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+/* #player1ph:hover ~ #player1lp, #player1lp:hover, #player2ph:hover ~ #player2lp, #player2lp:hover{
 	visibility: visible;
 	opacity: 1;
-}
+} */
 .player{
 	padding: 2px;
 	display: inline-grid;
@@ -26,12 +31,15 @@ body{
 #hpglow{
 	--glow-blur: 10px;
 	--glow-color: red;
-	box-shadow: 1px 1px 2px #ffff80, 0 0 25px #ffffb3, 0 0 5px #ffffff;
+	height: 100%;
+	-webkit-box-shadow: 1px 1px 2px #ffff80, 0 0 25px #ffffb3, 0 0 5px #ffffff;
+	        box-shadow: 1px 1px 2px #ffff80, 0 0 25px #ffffb3, 0 0 5px #ffffff;
 	border-radius: inherit;
 	overflow: hidden;
 }
 .duelistEnergy{
 	position: relative;
+	background-image: -webkit-gradient(linear,left top, left bottom,from(#ffff99),to(#ffff00));
 	background-image: linear-gradient(#ffff99,#ffff00);
 	background-size: cover;
 	width: 50%;
@@ -65,6 +73,7 @@ body{
 	display: inline-block;
 	border-color: #a3a300;
 	border-style: ridge;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#a3a300), color-stop(#ffa31a), to(#686801));
 	background-image: linear-gradient(#a3a300, #ffa31a, #686801);
 	text-shadow: 1px 1px 2px #929204, 0.5px 0.5px #ebeb3c,4px 3px 1px rgb(54, 48, 48) , -3px 3px 30px rgb(219, 0, 82);
 	letter-spacing: 5px;
@@ -73,6 +82,7 @@ body{
 
 	visibility: hidden;
 	opacity: 0;
+	-webkit-transition: visibility 0.5s, opacity 0.5s linear;
 	transition: visibility 0.5s, opacity 0.5s linear;
 
 	height: 108px;
@@ -92,9 +102,11 @@ body{
 	float: left;
 }
 #p1DuelistEnergy::after{
-	box-shadow: -2px 4px var(--glow-blur) var(--glow-color);
+	-webkit-box-shadow: -2px 4px var(--glow-blur) var(--glow-color);
+	        box-shadow: -2px 4px var(--glow-blur) var(--glow-color);
 	left: calc(100% - 20px);
-	transform: rotate(50deg) translateY(-8%);
+	-webkit-transform: rotate(50deg) translateY(-8%);
+	        transform: rotate(50deg) translateY(-8%);
 	border-left: 1.5px solid red;
 }
 #player1hp, #p1DuelistEnergy{
@@ -122,9 +134,11 @@ body{
 	float: right;
 }
 #p2DuelistEnergy::after{
-	box-shadow: 2px 4px var(--glow-blur) var(--glow-color);
+	-webkit-box-shadow: 2px 4px var(--glow-blur) var(--glow-color);
+	        box-shadow: 2px 4px var(--glow-blur) var(--glow-color);
 	right: calc(100% - 20px);
-	transform: rotate(-50deg) translateY(-8%);
+	-webkit-transform: rotate(-50deg) translateY(-8%);
+	        transform: rotate(-50deg) translateY(-8%);
 	border-right: 1.5px solid red;
 }
 #player2hp, #p2DuelistEnergy{
@@ -134,7 +148,8 @@ body{
 #player2ph{
 	background-image: var(--picture);
 	/* scaleX shte se mahne !! */
-	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	        transform: scaleX(-1);
 	grid-column: 6 / span 2;
 	grid-row: 2 / span 4;
 }
@@ -158,8 +173,22 @@ body{
 }
 
 /* -- MAT -- */
+.mat1v1{
+	-webkit-transform: perspective(800px) translate(-50%, 50px) rotateX(60deg);
+	        transform: perspective(800px) translate(-50%, 50px) rotateX(60deg);
+}
+.mat2v2{
+	-webkit-transform: perspective(1150px) translate(-50%, -148px) rotateX(60deg) !important;
+	        transform: perspective(1150px) translate(-50%, -148px) rotateX(60deg) !important;
+}
+
 .mat1v1, .mat2v2{
-	/* margin: auto; */
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	background: pink;
+	margin: auto;
+	padding: 20px;
 }
 .side, .sZone, .mZone, .inner{
 	display: grid;
@@ -169,11 +198,14 @@ body{
 	grid-column-gap: 35px;
 }
 .side{
-	margin: auto;
+	/* margin: auto; */
 	background: red;
 }
 .side div{
 	padding: 6px;
+}
+#matSide2 .monster, #matSide2 .spell {
+	transform: rotate(180deg);
 }
 .mat1v1 .side{
 	padding: 7px 1%;
@@ -194,14 +226,16 @@ body{
 	display: grid;
 }
 
-
 .sideDeck{
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
 }
 
 .monster, .spell, #middle{
+	background-image: -webkit-gradient(linear, left top, right bottom, from(yellow), color-stop(green), to(yellow));
 	background-image: linear-gradient(to bottom right, yellow, green, yellow);
 }
 .sideDeck, .extraDeck, .deck, .fieldCard, .graveyard{
+	background-image: -webkit-gradient(linear, left top, right bottom, from(cyan), color-stop(green), to(blue));
 	background-image: linear-gradient(to bottom right, cyan, green, blue)
 }
