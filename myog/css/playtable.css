@@ -10,10 +10,6 @@ body{
 	visibility: visible !important;
 	opacity: 1 !important;
 }
-/* #player1ph:hover ~ #player1lp, #player1lp:hover, #player2ph:hover ~ #player2lp, #player2lp:hover{
-	visibility: visible;
-	opacity: 1;
-} */
 .player{
 	padding: 2px;
 	display: inline-grid;
@@ -181,14 +177,28 @@ body{
 	-webkit-transform: perspective(1150px) translate(40%, -148px) rotateX(60deg) rotateZ(3deg);
 	        transform: perspective(1150px) translate(40%, -148px) rotateX(60deg) rotateZ(3deg);
 }
-@media only screen and (max-width:850px){
+@media only screen and (max-width:866px){
 	.mat1v1{
-		top: -60%;
+		top: -200px !important;
 		-webkit-transform: perspective(800px) translate(50%, 400px) rotateX(-80deg) rotateZ(3deg);
 				transform: perspective(800px) translate(50%, 400px) rotateX(-80deg) rotateZ(3deg);
 	}
 	.mat2v2{
-		top: -100%;
+		top: -80% !important;
+		-webkit-transform: perspective(1150px) translate(45%, 400px) rotateX(-70deg) rotateZ(3deg);
+				transform: perspective(1150px) translate(45%, 400px) rotateX(-90deg) rotateZ(-3deg);
+	}
+}
+@media only screen and (max-width:470px){
+	.mat1v1{
+		top: -60% !important;
+		right: 30% !important;
+		-webkit-transform: perspective(800px) translate(50%, 400px) rotateX(-80deg) rotateZ(3deg);
+				transform: perspective(800px) translate(50%, 400px) rotateX(-80deg) rotateZ(3deg);
+	}
+	.mat2v2{
+		top: -100% !important;
+		right: 0% !important;
 		-webkit-transform: perspective(1150px) translate(45%, 400px) rotateX(-70deg) rotateZ(3deg);
 				transform: perspective(1150px) translate(45%, 400px) rotateX(-90deg) rotateZ(-3deg);
 	}

@@ -1,4 +1,5 @@
 const show_class = 'show';
+const hide_delay = 2000;
 const timeOut = [0, 0];
 const lifepoints = [];
 const show = function([photo, lp], index){
@@ -9,7 +10,7 @@ const hide = function([photo, lp], index){
     if(lp.classList.contains(show_class)){
         timeOut[index] = setTimeout(() => {
             lp.classList.remove(show_class);
-        }, 5000);
+        }, hide_delay);
     }
 }
 for(let player of document.querySelectorAll('.player')){
