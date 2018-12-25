@@ -7,12 +7,29 @@
 		<link rel="stylesheet" type="text/css" href="css/myog.css">
 	</head>
 	<body>
-		<div class="login">
-			<h1><img src="PNG/logo.png">Login:</h1>
-			<span>Private name:</span><div><input type="name"></div><br><br>
-			<span>Password:</span><div><input type="password"></div><br><br>
-			<button class="butt" onmousedown="btt(this.id)" id="register">Register</button>
-			<button class="butt" onmousedown="btt(this.id)" id="MainMenu">Login</button>
+		<div class="wrapper">
+			<form class="form" onsubmit="btt('MainMenu');return false;">
+				<header>
+					<img src="PNG/logo.png">
+					<h1>Login</h1>
+				</header>
+				<div class="group">
+					<div class="field-group">
+						<input type="text" id="username" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
+						<label for="username">Username</label>
+					</div>
+				</div>
+				<div class="group">
+					<div class="field-group">
+						<input type="password" id="password" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
+						<label for="password">Password</label>
+					</div>
+				</div>
+				<footer>
+					<input class="btn" type="button" onmousedown="btt('register')" value="Register">
+					<input class="btn" type="submit" value="Login">
+				</footer>
+			</form>
 		</div>
 		<script src="js/moyg.js"></script>
 	</body>

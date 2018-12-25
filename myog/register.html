@@ -7,17 +7,59 @@
 		<link rel="stylesheet" type="text/css" href="css/myog.css">
 	</head>
 	<body onload="BGA()">
-		<div class="register">
-			<h1><img src="PNG/logo.png">Register:</h1>
-			<span>Privаte name:</span><div><input type="name" align="right"></div><br><br>
-			<span>First name:</span><div><input type="name" align="center"></div><br><br>
-			<span>Second name:</span><div><input type="name" align="center"></div><br><br>
-			<span>Last name:</span><div><input type="name" align="center"></div><br><br>
-			<span>E-mail:</span><div><input type="mail" align="center"></div><br><br>
-			<span>password:</span><div><input type="password" align="center"></div><br><br>
-			<span>confirm password:</span><div><input type="password" align="center"></div><br><br>
-			<button class="butt" onmousedown="btt(this.id)" id="index">Login</button>
-			<button class="butt" onmousedown="btt(this.id)" id="">Register</button>
+		<div class="wrapper">
+			<form class="form" onsubmit="btt('index');return false;">
+				<header>
+					<img src="PNG/logo.png">
+					<h1>Register</h1>
+				</header>
+				<div class="group">
+					<div class="field-group">
+						<input type="text" id="private_name" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
+						<label for="private_name">Privаte Name</label>
+					</div>
+				</div>
+				<div class="group">
+					<div class="field-group">
+						<input type="text" id="first_name" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
+						<label for="first_name">First Name</label>
+					</div>
+				</div>
+				<div class="group">
+					<div class="field-group">
+						<input type="text" id="second_name" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
+						<label for="second_name">Second Name</label>
+					</div>
+				</div>
+				<div class="group">
+					<div class="field-group">
+						<input type="text" id="last_username" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
+						<label for="last_username">Last Name</label>
+					</div>
+				</div>
+				<div class="group">
+					<div class="field-group">
+						<input type="email" id="e-mail" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
+						<label for="e-mail">E-mail</label>
+					</div>
+				</div>
+				<div class="group">
+					<div class="field-group">
+						<input type="password" id="password" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
+						<label for="password">Password</label>
+					</div>
+				</div>
+				<div class="group">
+					<div class="field-group">
+						<input type="password" id="confirm" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
+						<label for="confirm">Confirm Password</label>
+					</div>
+				</div>
+				<footer>
+					<input class="btn" type="button" onmousedown="btt('index')" value="Login">
+					<input class="btn" type="submit" value="Register">
+				</footer>
+			</form>
 		</div>
 		<script src="js/moyg.js"></script>
 	</body>

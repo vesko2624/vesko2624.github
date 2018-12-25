@@ -37,3 +37,53 @@ function btt(url) {
 	se.play();
     setTimeout(function(){ window.location.href = `${url}.html`; }, 500);
 }
+
+for(let i of document.querySelectorAll('.field-group')){
+    const input = i.querySelector('input'); 
+    const label = i.querySelector('label');
+    const input_class = input.classList;
+    const label_class = label.classList;
+    input.onfocus = () => {
+        label_class.add('label-focused');
+    };
+    input.onblur = () => {
+        if(!input.value) {
+			label.removeAttribute('class');
+			input.removeAttribute('class');
+        }else{
+            if(input.validity.valid){
+                input_class.remove('invalid');
+                input_class.add('valid');
+            }
+            else{
+                input_class.remove('valid');
+                input_class.add('invalid');
+            }
+        }
+    };
+}
+const confirm = document.querySelector('input[id=confirm]');
+const password = document.querySelector('input[id=password]');
+const form = document.querySelector('form');
+if(confirm && password){
+	const confirm_func = () => {
+		confirm.removeAttribute('class');
+		if(confirm.value){
+			if(password.value && password.value != confirm.value)
+				confirm.classList.add('invalid');
+			else
+				confirm.classList.add('valid');
+		}
+	}
+	form.onchange = confirm_func ;
+}
+// const inputs = document.querySelectorAll('input[type=text],input[type=password], input[type=email]');
+// const submit = document.querySelector('input[type=submit]');
+// if(form){
+// 	form.onkeyup = () => {
+// 		if(inputs.length != document.querySelectorAll('.valid').length)
+// 			submit.setAttribute('disabled','');
+// 		else
+// 			submit.removeAttribute('disabled');
+// 	}
+// }
