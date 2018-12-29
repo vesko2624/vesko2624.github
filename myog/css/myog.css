@@ -17,6 +17,7 @@ html, body{
 
 /* Background */
 html {
+	background-color: #996600;
 	background-image: url('../PNG/background.png');
 }
 
@@ -99,6 +100,9 @@ header h1{
 }
 
 /* Buttons */
+button{
+	outline: none;
+}
 footer{
   text-align: center;
 }
