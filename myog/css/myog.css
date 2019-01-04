@@ -90,13 +90,13 @@ header h1{
   width: 100%;
   height: 1.2em;
   font-size: 1.2em;
-  box-shadow: 0 1px 0 0 #ffff33;
+  box-shadow: 0 1px 0 -0.5px #ffff33;
 }
 
 /* On Field Focus */
 .field-group input:focus{
   padding: 1em 0.5em;
-  box-shadow: 0 2px 0 1.5px blue;
+	box-shadow: 7px -8px 20px -2px red, -1.5px 2px 0 1px blue;
 }
 
 /* Buttons */
@@ -147,10 +147,10 @@ footer{
   padding: 1em; /* Common padding */
 }
 .valid{
-  box-shadow: 0 2.5px 0 2px green !important;
+  box-shadow: -2px 2.5px 0 1.5px green !important;
 }
 .invalid{
-  box-shadow: 0 2.5px 0 2px red !important;
+  box-shadow: -2px 2.5px 0 1.5px red !important;
 }
 
 /* If the page is not Login or Register */
