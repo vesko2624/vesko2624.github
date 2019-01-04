@@ -12,12 +12,12 @@ input{
 /* Set page to fill the screen */
 html, body{
 	width: 100%;
-	height: 100%;
+	min-height: 100%;
 }
 
 /* Background */
 html {
-	background-color: #996600;
+	background-color: #000000 /*#996600*/;
 	background-image: url('../PNG/background.png');
 }
 
@@ -32,9 +32,9 @@ html {
 }
 /* Animations */
 .wrapper *{
-  transition: line-height 250ms ease-out, padding 250ms ease-out, left 250ms ease-out,
+	transition: line-height 250ms ease-out, padding 250ms ease-out, left 250ms ease-out,
 				top 250ms ease-out, transform 250ms ease-in-out, background-color 250ms ease-out,
-				box-shadow 250ms ease-in, font-size 250ms ease-out;
+				color 250ms ease-in, box-shadow 250ms ease-in, font-size 250ms ease-out;
 }
 
 /* Field Wrapper */
@@ -83,20 +83,20 @@ header h1{
 .field-group input{
 	color: white;
 	background-color: transparent;
-  border-radius: 5px;
+	border-radius: 5px;
 }
 .field-group input, footer input{
   transform: translateY(-50%);
   width: 100%;
   height: 1.2em;
   font-size: 1.2em;
-  box-shadow: 0 1px 0 -0.5px #ffff33;
+  box-shadow: 0 1px 0 #ffff33;
 }
 
 /* On Field Focus */
 .field-group input:focus{
   padding: 1em 0.5em;
-	box-shadow: 7px -8px 20px -2px red, -1.5px 2px 0 1px blue;
+  box-shadow: -0.75px 1.25px 0 0.75px blue;
 }
 
 /* Buttons */
@@ -113,13 +113,13 @@ footer{
 	background-repeat:no-repeat;
 	background-color: #cccc00;
 	border-color: #b3b300;
-  color: #808000;
+	color: #808000;
 
 	font-size: 1.5em;
 	font-weight: bold;
 	font-family: cursive;
   
-  height: 85px;
+	height: 85px;
 	width: 235px;
 	margin: 10px 5px;
 
@@ -127,12 +127,11 @@ footer{
   box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
 }
 .btn:not([disabled]):hover{
-  background-image: url('../PNG/button_h.png');
+	background-image: url('../PNG/button_h.png');
 	background-repeat:no-repeat;
 	background-color: #e6e600;
 	color: #ffffcc;
 	cursor: pointer;
-	transition: color 250ms ease-out;
 	box-shadow: 0 0 50px rgba(255, 255, 204, 0.5);
 }
 
@@ -147,10 +146,10 @@ footer{
   padding: 1em; /* Common padding */
 }
 .valid{
-  box-shadow: -2px 2.5px 0 1.5px green !important;
+  box-shadow: -1.5px 2px 0 1.5px green !important;
 }
 .invalid{
-  box-shadow: -2px 2.5px 0 1.5px red !important;
+  box-shadow: -1.5px 2px 0 1.5px red !important;
 }
 
 /* If the page is not Login or Register */
