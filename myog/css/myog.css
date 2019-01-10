@@ -16,10 +16,17 @@ html, body{
 }
 
 /* Background */
-html {
-	background-color: #000000 /*#996600*/;
-	background-image: url('../PNG/background.png');
+body {
+	background-image: url('../PNG/background.png'), linear-gradient(270deg,#ff2a00,#0800ff,#48ff00);
+	background-size: 50% 50%,300% 300%;
+	animation: Gradient 10s ease infinite;
 }
+	
+	@keyframes Gradient { 
+		0%{background-position: 50% 50%,0% 50%}
+		50%{background-position:50% 50%,100% 50%}
+		100%{background-position:50% 50%,0% 50%}
+	}
 
 /* Form Wrapper */
 .wrapper{
