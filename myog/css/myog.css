@@ -16,7 +16,7 @@ html, body{
 }
 
 /* Background */
-body {
+html {
 	background-image: url('../PNG/background.png'), linear-gradient(270deg,#ff2a00,#0800ff,#48ff00);
 	background-size: 50% 50%,300% 300%;
 	animation: Gradient 10s ease infinite;
