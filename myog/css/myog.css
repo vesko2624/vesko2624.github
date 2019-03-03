@@ -17,7 +17,7 @@ html, body{
 
 /* Background */
 #animated_on{
-	background-image: linear-gradient(90deg,rgba(255, 127, 127,0.2),rgba(0,0,0,0.25),rgba(84, 255, 0,0.25),rgba(0,0,0,0.25),rgba(12, 214, 255,0.1),rgba(0,0,0,0.25)), url('../PNG/background.png'), linear-gradient(90deg,#ff0000,#000000 , #54ff00 ,#000000,#00d4ff ,#000000);
+	background-image: linear-gradient(90deg,rgba(255, 127, 127,0.1),rgba(0,0,0,0.25),rgba(84, 255, 0,0.25),rgba(0,0,0,0.25),rgba(12, 214, 255,0.1),rgba(0,0,0,0.25)), url('../PNG/background.png'), linear-gradient(90deg,#ff0000,#000000 , #54ff00 ,#000000,#00d4ff ,#000000);
 	background-size:  1200% 100%,auto ,1200% 100%;
 	animation: Gradient 15s ease infinite;
 }
