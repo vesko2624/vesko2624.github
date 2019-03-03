@@ -16,17 +16,23 @@ html, body{
 }
 
 /* Background */
-html {
-	background-image: url('../PNG/background.png'), linear-gradient(270deg,#ff2a00,#0800ff,#48ff00);
-	background-size: 50% 50%,300% 300%;
-	animation: Gradient 10s ease infinite;
+#animated_on{
+	background-image: linear-gradient(90deg,rgba(255, 0, 0,0.3),rgba(0,0,0,0.25),rgba(84, 255, 0,0.25),rgba(0,0,0,0.25),rgba(4, 0, 255,0.25),rgba(0,0,0,0.25)), url('../PNG/background.png'), linear-gradient(90deg,#ff0000,#000000 , #54ff00 ,#000000,#0400FF ,#000000);
+	background-size:  310% 100%,auto ,600% 100%;
+	animation: Gradient 15s ease infinite;
 }
 	
-	@keyframes Gradient { 
-		0%{background-position: 50% 50%,0% 50%}
-		50%{background-position:50% 50%,100% 50%}
-		100%{background-position:50% 50%,0% 50%}
-	}
+@keyframes Gradient { 
+	0%{background-position: 0% 50%,50% 50%,0% 50%}
+	50%{background-position: 100% 50%,50% 50%,100% 50%}
+	100%{background-position: 0% 50% ,50% 50%,0% 50%}
+}
+
+#animated_off{
+	background-color: #000000;
+	background-image: url('../PNG/background.png');
+}
+
 
 /* Form Wrapper */
 .wrapper{
@@ -35,6 +41,23 @@ html {
     margin: 50px auto;   
     background-image: url('../PNG/divBG.png');
     border-radius: 5px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+}
+.card_dc{
+	position: absolute;
+	top: 100px;
+	left: 39px;
+	height: 360px;
+	width: 272px;
+	background-image: url('../PNG/cardback.jpg');
+}
+.dc{
+	position:absolute;
+	width: 350px;
+	height: 100%;
+	left: 10px;
+    background-image: url('../PNG/divBG.png');
+	border-radius: 5px;
     box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
 }
 /* Animations */
@@ -125,7 +148,7 @@ footer{
 	font-size: 1.5em;
 	font-weight: bold;
 	font-family: cursive;
-  
+
 	height: 85px;
 	width: 235px;
 	margin: 10px 5px;
