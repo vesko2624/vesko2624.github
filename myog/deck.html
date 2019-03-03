@@ -1,19 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html id="animated_on">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" type="text/css" href="css/myog.css">
+		<style>
+			#MainMenu{
+				position: absolute;
+				bottom: 10px;
+				margin: 0px 57px;
+			}
+			textarea{
+				resize: none;
+				overflow: inherit;
+				position: absolute;
+				top: 480px;
+				left: 39px;
+				width: 272px;
+				color: #585858;
+				background-color: #000000;
+				border-color: #585858;
+				border-radius: 3px;
+				outline: none;
+			}
+		</style>
 	</head>
 	<body onload="BGA()">
-			<div class="wrapper menu">
+			<div class="dc">
 				<header>
-					<img src="PNG/logo.png">
-					<h1>Deck</h1>
+					<h1>CARD</h1>
 				</header>
+				<div class="card_dc">
+				</div>
+				<textarea style="overflow:auto">aaaaaaaaaaaaaaaa
+				bbbbbbbbbbbbbbb
+				cccccccccccccccccc</textarea>
 				<button class="btn" onmousedown="btt(this.id)" id="MainMenu">Back</button>
-			</div>
+			</div>	
 			<script src="js/moyg.js"></script>
 	</body>
 </html>
