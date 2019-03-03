@@ -4,7 +4,7 @@ let adr = "sounds/BG/",
 	ras = ".mp3",
 	played = new Audio(),
 	current_song = -1;
-played.volume = 0.3;
+played.volume = 0.5;
 if(played.canPlayType('audio/mp3') !== "probably") ras = ".ogg";
 
 async function rand_song(){
@@ -34,6 +34,7 @@ async function BGA(){
 played.onended = BGA;
 
 function btt(url) {
+	se.volume = 0.1;
 	se.play();
     setTimeout(function(){ window.location.href = `${url}.html`; }, 500);
 }
