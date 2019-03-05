@@ -33,9 +33,15 @@ async function BGA(){
 }
 played.onended = BGA;
 
-function btt(url) {
+function clickSound(){
 	se.play();
-    setTimeout(function(){ window.location.href = `${url}.html`; }, 500);
+}
+function delayedHref(url){
+	setTimeout(function(){ window.location.href = `${url}.html`; }, 500);
+}
+function btt(url) {
+	clickSound();
+	delayedHref(url);
 }
 
 for(let i of document.querySelectorAll('.field-group')){

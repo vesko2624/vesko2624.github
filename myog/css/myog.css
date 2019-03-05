@@ -5,7 +5,9 @@
 	box-sizing: border-box;
 }
 input{
-  outline: none;
+	outline: none;
+}
+input[type=text], input[type=password], input[type=email]{
   border: 0;
 }
 
