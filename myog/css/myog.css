@@ -13,6 +13,7 @@ input[type=text], input[type=password], input[type=email]{
 
 /* Set page to fill the screen */
 html, body{
+	height: 100%;
 	width: 100%;
 	min-height: 100%;
 }
@@ -42,6 +43,7 @@ html, body{
 
 /* Form Wrapper */
 .wrapper{
+		min-width: 422px;
     max-width: 600px;
     padding: 40px 50px;
     margin: 50px auto;   
@@ -50,18 +52,19 @@ html, body{
     box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
 }
 .card_dc{
-	position: absolute;
-	top: 100px;
-	left: 39px;
 	height: 360px;
-	width: 272px;
-	background-image: url('../PNG/cardback.jpg');
+	width: 242px;
+	margin: 32px auto;
+	background-image: url('../PNG/card_back.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 .dc{
-	position:absolute;
+	position:relative;
+	display: inline-block;
 	width: 350px;
-	height: 100%;
-	left: 10px;
+	min-height: 100%;
+	/* left: 10px; */
     background-image: url('../PNG/divBG.png');
 	border-radius: 5px;
     box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
@@ -123,7 +126,8 @@ header h1{
 }
 .field-group input, footer input{
   transform: translateY(-50%);
-  width: 100%;
+	width: 100%;
+	min-width: 115px;
   height: 1.2em;
   font-size: 1.2em;
   box-shadow: 0 1px 0 #dddd1a;
@@ -155,8 +159,9 @@ footer{
 	font-weight: bold;
 	font-family: cursive;
 
-	height: 85px;
+	height: 65px;
 	width: 235px;
+	min-width: 235px;
 	margin: 10px 5px;
 
   border-radius: 5px;
