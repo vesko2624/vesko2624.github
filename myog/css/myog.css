@@ -19,16 +19,20 @@ html, body{
 
 /* Background */
 #animated_on{
-	background-image: linear-gradient(90deg,rgba(255, 127, 127,0.1),rgba(0,0,0,0.25),rgba(84, 255, 0,0.25),rgba(0,0,0,0.25),rgba(12, 214, 255,0.1),rgba(0,0,0,0.25)), url('../PNG/background.png'), linear-gradient(90deg,#ff0000,#000000 , #54ff00 ,#000000,#00d4ff ,#000000);
-	background-size:  1200% 100%,auto ,1200% 100%;
-	animation: Gradient 15s ease infinite;
+	background-image: linear-gradient(90deg ,rgba(0,0,0,0.1) ,rgba(255, 127, 127,0.3),rgba(0,0,0,0.1),rgba(84, 255, 0,0.3),rgba(0,0,0,0.01),rgba(12, 214, 255,0.3),rgba(0,0,0,0.1)), url('../PNG/background.png'), linear-gradient(90deg, #000000 ,#ff0000 ,#000000 , #54ff00 ,#000000,#00d4ff ,#000000 );
+	background-size:  200% 100%,auto ,200% 100%;
+	animation: Gradient 6s linear infinite;
 }
 	
 @keyframes Gradient { 
-	0%{background-position: 0% 50%,50% 50%,0% 50%}
-	50%{background-position: 100% 50%,50% 50%,100% 50%}
-	100%{background-position: 0% 50% ,50% 50%,0% 50%}
+	  0%{
+    background-position-x: 200% , 100% , 200%
+  }
+  100%{
+    background-position-x: 0% , 100% , 0%
+  }
 }
+
 
 #animated_off{
 	background-color: #000000;
