@@ -46,7 +46,8 @@ html, body{
 		min-width: 422px;
     max-width: 600px;
     padding: 40px 50px;
-    margin: 50px auto;   
+		margin: 0 auto;
+		transform: translateY(50px);
     background-image: url('../PNG/divBG.png');
     border-radius: 5px;
     box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
