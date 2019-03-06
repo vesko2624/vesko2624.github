@@ -61,14 +61,20 @@ html, body{
 	background-repeat: no-repeat;
 }
 .dc{
-	position:relative;
-	display: inline-block;
+	position: relative;
 	width: 350px;
-	min-height: 100%;
-	/* left: 10px; */
-    background-image: url('../PNG/divBG.png');
-	border-radius: 5px;
-    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+	min-height: 98%;
+	padding: 10px 0;
+	min-width: initial;
+	max-width: initial;
+	margin: initial;
+	transform: translate(10px, 1%);
+	margin-bottom: 1%;
+}
+.dc::after{
+	content: '';
+  display: block;
+  height: 150px;
 }
 /* Animations */
 .wrapper *{
