@@ -45,12 +45,12 @@ html, body{
 }
 	
 @keyframes Gradient { 
-	  0%{
-    background-position-x: 200% , 100% , 200%
-  }
+	0%{
+		background-position-x: 200% , 100% , 200%
+	}
   100%{
-    background-position-x: 0% , 100% , 0%
-  }
+		background-position-x: 0% , 100% , 0%
+	}
 }
 
 
@@ -65,8 +65,8 @@ html, body{
 		min-width: 422px;
     max-width: 600px;
     padding: 40px 50px;
-		margin: 0 auto;
-		transform: translateY(50px);
+	margin: 0 auto;
+	transform: translateY(50px);
     background-image: url('../PNG/divBG.png');
     border-radius: 5px;
     box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
@@ -95,6 +95,28 @@ html, body{
   display: block;
   height: 150px;
 }
+textarea{
+	resize: none;
+	overflow: inherit;
+	position: absolute;
+	top: 480px;
+	left: 39px;
+	width: 272px;
+	color: #585858;
+	background-color: #000000;
+	border-color: #585858;
+	border-radius: 3px;
+	outline: none;
+}
+.card_description{
+	margin: auto;
+	padding: 5px 20px;
+	width: 272px;
+	color: #585858;
+	background-color: #000000;
+	border: 1px solid #585858;
+	border-radius: 3px;
+			}
 /* Animations */
 .wrapper *{
 	transition: line-height 250ms ease-out, padding 250ms ease-out, left 250ms ease-out,
@@ -170,7 +192,7 @@ button{
 	outline: none;
 }
 footer{
-  text-align: center;
+	text-align: center;
 }
 .btn{
 	transform: translateY(0%) !important;
@@ -235,6 +257,6 @@ footer{
 	margin-bottom: 30px;
 }
 .menu .btn{
-  height: 65px;
+	height: 65px;
 	width: 70%;
 }
