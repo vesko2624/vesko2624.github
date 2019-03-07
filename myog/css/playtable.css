@@ -163,8 +163,8 @@ body{
 
 /* -- MAT -- */
 .mat1v1{
-	-webkit-transform: perspective(800px) translate(10%, -105px) rotateX(60deg) rotateY(3deg) rotateZ(-10deg) scale(1.1);
-	        transform: perspective(800px) translate(10%, -105px) rotateX(60deg) rotateY(3deg) rotateZ(-10deg) scale(1.1);
+	-webkit-transform: perspective(800px) translate(-12%, -240px) rotateX(52deg) rotateY(3deg) rotateZ(-8deg) scale(1.2);
+	        transform: perspective(800px) translate(-12%, -240px) rotateX(52deg) rotateY(3deg) rotateZ(-8deg) scale(1.2);
 }
 .mat2v2{
 	-webkit-transform: perspective(1150px) translate(40%, -148px) rotateX(60deg) rotateZ(3deg);
@@ -262,4 +262,48 @@ body{
 .sideDeck, .extraDeck, .deck, .fieldCard, .graveyard{
 	background-image: -webkit-gradient(linear, left top, right bottom, from(cyan), color-stop(green), to(blue));
 	background-image: linear-gradient(to bottom right, cyan, green, blue)
+}
+
+/* CARD */
+.font-glow{
+	background: -webkit-linear-gradient(#ffffff,#ffffb3,#ffff99,#ffff33);
+    text-shadow: 0 0 50px rgba(255, 255, 204, 0.5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#card{
+	background-image: url('../PNG/divBG.png');
+    border-radius: 5px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+	width: 350px;
+	padding: 10px 0;
+	transform: translateY(1%);
+	margin-bottom: 1%;
+}
+#card_name h1{
+    font-size: 2em;
+	text-align: center;
+	margin: 0;
+}
+#card_pic{
+	height: 360px;
+	width: 242px;
+	margin: 10px auto;
+	background-image: url('../PNG/card_back.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#card_stats{
+	font-size: 1.5em;
+	text-align: center;
+}
+#card_desc{
+	margin: 10px auto;
+	padding: 5px 20px;
+	width: 272px;
+	color: #585858;
+	background-color: #000000;
+	border: 1px solid #585858;
+	border-radius: 3px;
+	word-wrap: break-word;
 }
