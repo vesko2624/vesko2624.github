@@ -4,7 +4,19 @@ let adr = "sounds/BG/",
 	ras = ".mp3",
 	played = new Audio(),
 	current_song = -1;
-played.volume = 0.5;
+
+// LOAD SETTINGS
+
+const stored_music_volume = window.localStorage.getItem("Music_Volume");
+if(isNaN(stored_music_volume)) window.localStorage.setItem("Music_Volume", 0.5);
+played.volume = stored_music_volume;
+
+const stored_click_volume = window.localStorage.getItem("Click_Volume");
+if(isNaN(stored_click_volume)) window.localStorage.setItem("Click_Volume", 0.1);
+se.volume = stored_click_volume;
+
+// END LOAD
+
 if(played.canPlayType('audio/mp3') !== "probably") ras = ".ogg";
 
 async function rand_song(){
@@ -34,7 +46,6 @@ async function BGA(){
 played.onended = BGA;
 
 function clickSound(){
-	se.volume = 0.1;
 	se.play();
 }
 function delayedHref(url){

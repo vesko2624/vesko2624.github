@@ -93,7 +93,6 @@ html, body{
 	max-width: initial;
 	margin: initial;
 	transform: translate(10px, 1%);
-	margin-bottom: 1%;
 }
 .dc::after{
 	content: '';
