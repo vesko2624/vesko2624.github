@@ -3,6 +3,10 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	cursor: url(../PNG/cursor.png) , auto;
+}
+*::hover{
+	cursor: url(../PNG/cursor_h.png) , auto;
 }
 input{
   outline: none;
@@ -10,6 +14,7 @@ input{
 input[type=text], input[type=password], input[type=email]{
 	border: 0;
 }
+
 
 /* Set page to fill the screen */
 html, body{
@@ -163,7 +168,7 @@ header h1{
   left: 0px;
   padding: 0 0.5px;
   margin-left: 2px;
-  cursor: text;
+  cursor: url(../PNG/Milenumrod.png) , auto;
   user-select: none;
 }
 /* Input */
@@ -220,7 +225,7 @@ footer{
 	background-repeat:no-repeat;
 	background-color: #e6e600;
 	color: #ffffcc;
-	cursor: pointer;
+	cursor: url(../PNG/cursor_h.png) , auto;
 	box-shadow: 0 0 50px rgba(255, 255, 204, 0.5);
 }
 .btn:disabled {
