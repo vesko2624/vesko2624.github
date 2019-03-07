@@ -5,6 +5,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" type="text/css" href="css/playtable.css">
+		<style>
+			#player1hand{
+				flex-grow: 1;
+				text-align: center;
+				line-height: 190px;
+				min-width: 350px;
+			}
+			header{
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+			#content{
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+			}
+		</style>
 	</head>
 	<body>
 		<header>
@@ -23,6 +41,7 @@
 				</div>
 				<div id="player1lp" class="lifepoints">4000LP</div>
 			</div>
+			<div id="player1hand">ivan</div>
 			<!--p2_HUD-->
 			<div id="player2" class="player">
 				<div id="player2hp" class="hp"> <div id="hpglow"> <div id="p2DuelistEnergy" class="duelistEnergy"></div> </div></div>
@@ -40,105 +59,107 @@
 			</div>
 		</header>
 		<!-- MAT -->
-		<div class="mat1v1">
-			<div class="side" id="matSide2">
-				<div class="inner" id="p1Inner">
-					<div class="deck"></div>
-					<div class="none"></div>
-					<div class="none"></div>
-					<div class="none"></div>
-					<div class="none"></div>
-					<div class="extraDeck"></div>
-					<div class="sideDeck"></div>
-				</div>
+		<div id="content">
+			<div id="mat" class="mat1v1">
+				<div class="side" id="matSide2">
+					<div class="inner" id="p1Inner">
+						<div class="deck"></div>
+						<div class="none"></div>
+						<div class="none"></div>
+						<div class="none"></div>
+						<div class="none"></div>
+						<div class="extraDeck"></div>
+						<div class="sideDeck"></div>
+					</div>
 
-				<div class="sZone" id="monsterZone1">
-					<div class="fieldCard"></div>
-					<div class="spell"></div>
-					<div class="spell"></div>
-					<div class="spell"></div>
-					<div class="spell"></div>
-					<div class="spell"></div>
-					<div class="graveyard"></div>
-				</div>
+					<div class="sZone" id="monsterZone1">
+						<div class="fieldCard"></div>
+						<div class="spell"></div>
+						<div class="spell"></div>
+						<div class="spell"></div>
+						<div class="spell"></div>
+						<div class="spell"></div>
+						<div class="graveyard"></div>
+					</div>
 
-				<div class="sZone twoVtwo" id="spellZone1">
-					<div class="none"></div>
-					<div class="spell"></div>
-					<div class="spell"></div>
-					<div class="spell"></div>
-					<div class="spell"></div>
-					<div class="spell"></div>
-					<div class="none"></div>
-				</div>
-				<div class="mZone twoVtwo" id="monsterZone2">
-					<div class="none"></div>
-					<div class="monster"></div>
-					<div class="monster"></div>
-					<div class="monster"></div>
-					<div class="monster"></div>
-					<div class="monster"></div>
-					<div class="none"></div>
-				</div>
+					<div class="sZone twoVtwo" id="spellZone1">
+						<div class="none"></div>
+						<div class="spell"></div>
+						<div class="spell"></div>
+						<div class="spell"></div>
+						<div class="spell"></div>
+						<div class="spell"></div>
+						<div class="none"></div>
+					</div>
+					<div class="mZone twoVtwo" id="monsterZone2">
+						<div class="none"></div>
+						<div class="monster"></div>
+						<div class="monster"></div>
+						<div class="monster"></div>
+						<div class="monster"></div>
+						<div class="monster"></div>
+						<div class="none"></div>
+					</div>
 
-				<div class="mZone" id="spellZone2">
-					<div class="none"></div>
-					<div class="monster"></div>
-					<div class="monster"></div>
-					<div class="monster"></div>
-					<div class="monster"></div>
-					<div class="monster"></div>
-					<div class="banished"></div>
+					<div class="mZone" id="spellZone2">
+						<div class="none"></div>
+						<div class="monster"></div>
+						<div class="monster"></div>
+						<div class="monster"></div>
+						<div class="monster"></div>
+						<div class="monster"></div>
+						<div class="banished"></div>
+					</div>
 				</div>
-			</div>
-			</br>
-			<div class="side" id="matSide1">
-				<div class="mZone" id="spellZone2">
-					<div class="none"></div>
-					<div class="monster"></div>
-					<div class="monster"></div>
-					<div class="monster"></div>
-					<div class="monster"></div>
-					<div class="monster"></div>
-					<div class="banished"></div>
-				</div>
+				</br>
+				<div class="side" id="matSide1">
+					<div class="mZone" id="spellZone2">
+						<div class="none"></div>
+						<div class="monster"></div>
+						<div class="monster"></div>
+						<div class="monster"></div>
+						<div class="monster"></div>
+						<div class="monster"></div>
+						<div class="banished"></div>
+					</div>
 
-				<div class="mZone twoVtwo" id="monsterZone2">
-					<div class="none"></div>
-					<div class="monster"></div>
-					<div class="monster"></div>
-					<div class="monster"></div>
-					<div class="monster"></div>
-					<div class="monster"></div>
-					<div class="none"></div>
-				</div>
-				<div class="sZone twoVtwo" id="spellZone1">
-					<div class="none"></div>
-					<div class="spell"></div>
-					<div class="spell"></div>
-					<div class="spell"></div>
-					<div class="spell"></div>
-					<div class="spell"></div>
-					<div class="none"></div>
-				</div>
+					<div class="mZone twoVtwo" id="monsterZone2">
+						<div class="none"></div>
+						<div class="monster"></div>
+						<div class="monster"></div>
+						<div class="monster"></div>
+						<div class="monster"></div>
+						<div class="monster"></div>
+						<div class="none"></div>
+					</div>
+					<div class="sZone twoVtwo" id="spellZone1">
+						<div class="none"></div>
+						<div class="spell"></div>
+						<div class="spell"></div>
+						<div class="spell"></div>
+						<div class="spell"></div>
+						<div class="spell"></div>
+						<div class="none"></div>
+					</div>
 
-				<div class="sZone" id="monsterZone1">
-					<div class="fieldCard"></div>
-					<div class="spell"></div>
-					<div class="spell"></div>
-					<div class="spell"></div>
-					<div class="spell"></div>
-					<div class="spell"></div>
-					<div class="graveyard"></div>
-				</div>
-				<div class="inner" id="p1Inner">
-					<div class="sideDeck"></div>
-					<div class="extraDeck"></div>
-					<div class="none"></div>
-					<div class="none"></div>
-					<div class="none"></div>
-					<div class="none"></div>
-					<div class="deck"></div>
+					<div class="sZone" id="monsterZone1">
+						<div class="fieldCard"></div>
+						<div class="spell"></div>
+						<div class="spell"></div>
+						<div class="spell"></div>
+						<div class="spell"></div>
+						<div class="spell"></div>
+						<div class="graveyard"></div>
+					</div>
+					<div class="inner" id="p1Inner">
+						<div class="sideDeck"></div>
+						<div class="extraDeck"></div>
+						<div class="none"></div>
+						<div class="none"></div>
+						<div class="none"></div>
+						<div class="none"></div>
+						<div class="deck"></div>
+					</div>
 				</div>
 			</div>
 		</div>

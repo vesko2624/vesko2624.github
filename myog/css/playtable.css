@@ -93,10 +93,6 @@ body{
 }
 
 /* -- Player 1 --*/
-#player1, #p1DuelistEnergy{
-	left: 0px;
-	float: left;
-}
 #p1DuelistEnergy::after{
 	-webkit-box-shadow: -2px 4px var(--glow-blur) var(--glow-color);
 	        box-shadow: -2px 4px var(--glow-blur) var(--glow-color);
@@ -125,10 +121,6 @@ body{
 
 
 /* -- Player 2 -- */
-#player2, #p2DuelistEnergy{
-	right: 0px;
-	float: right;
-}
 #p2DuelistEnergy::after{
 	-webkit-box-shadow: 2px 4px var(--glow-blur) var(--glow-color);
 	        box-shadow: 2px 4px var(--glow-blur) var(--glow-color);
@@ -140,6 +132,7 @@ body{
 #player2hp, #p2DuelistEnergy{
 	border-radius: 60% 15px;
 	grid-column: 1 / span 7;
+	float:right;
 }
 #player2ph{
 	background-image: var(--picture);
@@ -170,8 +163,8 @@ body{
 
 /* -- MAT -- */
 .mat1v1{
-	-webkit-transform: perspective(800px) translate(35%, 50px) rotateX(70deg) rotateZ(3deg);
-	        transform: perspective(800px) translate(35%, 50px) rotateX(70deg) rotateZ(3deg);
+	-webkit-transform: perspective(800px) translate(10%, -105px) rotateX(60deg) rotateY(3deg) rotateZ(-10deg) scale(1.1);
+	        transform: perspective(800px) translate(10%, -105px) rotateX(60deg) rotateY(3deg) rotateZ(-10deg) scale(1.1);
 }
 .mat2v2{
 	-webkit-transform: perspective(1150px) translate(40%, -148px) rotateX(60deg) rotateZ(3deg);
@@ -208,15 +201,13 @@ body{
 	background-image:url('../PNG/button.png');
 	background-size: cover;
 }
-.mat1v1, .mat2v2{
+#mat{
 	display: inline-block;
-	position: absolute;
-	right: 50%;
 	background: pink;
 	margin: auto;
 	padding: 20px;
 }
-.mat1v1:after,.mat2v2:after{
+#mat::after{
 	display: block;
 	height: 20px;
 	transform:translate(-20%);
