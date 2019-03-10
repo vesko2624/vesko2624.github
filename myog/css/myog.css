@@ -43,12 +43,50 @@ html, body{
 }
 
 /* Background */
+#animated_off{
+	background-color: #000000;
+	background-image: url('../PNG/background.png');
+}
+
+#animated2_off	{
+	background-image: linear-gradient(90deg ,rgba(0,0,0,0.1) ,rgba(255, 127, 127,0.3),rgba(0,0,0,0.1),rgba(84, 255, 0,0.3),rgba(0,0,0,0.01),rgba(12, 214, 255,0.3),rgba(0,0,0,0.1)), url('../PNG/background.png'), linear-gradient(90deg, #000000 ,#ff0000 ,#000000 , #54ff00 ,#000000,#00d4ff ,#000000 );
+}
+
 #animated_on{
 	background-image: linear-gradient(90deg ,rgba(0,0,0,0.1) ,rgba(255, 127, 127,0.3),rgba(0,0,0,0.1),rgba(84, 255, 0,0.3),rgba(0,0,0,0.01),rgba(12, 214, 255,0.3),rgba(0,0,0,0.1)), url('../PNG/background.png'), linear-gradient(90deg, #000000 ,#ff0000 ,#000000 , #54ff00 ,#000000,#00d4ff ,#000000 );
 	background-size:  200% 100%,auto ,200% 100%;
 	animation: Gradient 12s linear infinite;
 }
-	
+
+#animated2_on{
+	background-image: linear-gradient(90deg,rgba(255, 127, 127,0.2),rgba(0,0,0,0.25),rgba(84, 255, 0,0.25),rgba(0,0,0,0.25),rgba(12, 214, 255,0.1),rgba(0,0,0,0.25)), url('../PNG/background.png'), linear-gradient(90deg,#ff0000,#000000 , #54ff00 ,#000000,#00d4ff ,#000000);
+	background-size:  1200% 100%,auto ,1200% 100%;
+	animation: Gradient2 15s ease infinite;
+}
+
+#animated3_on{
+	background-image: linear-gradient(90deg ,rgba(0,0,0,0.1) ,rgba(255, 127, 127,0.3),rgba(0,0,0,0.1),rgba(84, 255, 0,0.3),rgba(0,0,0,0.01),rgba(12, 214, 255,0.3),rgba(0,0,0,0.1)), url('../PNG/background.png'), linear-gradient(90deg, #000000 ,#ff0000 ,#000000 , #54ff00 ,#000000,#00d4ff ,#000000 );
+	background-size:  30% 100%,auto ,30% 100%;
+	animation: Gradient  2s linear infinite;
+}
+
+#animated4_on{
+	background-color: #000000;
+	background-image: url('../PNG/background.png');
+	animation: Gradient3 linear 0.3s infinite alternate;
+}
+#animated5_on{
+	background-color: #000000;
+	background-image: url('../PNG/background.png');
+	animation: Gradient4 linear 0.5s infinite alternate;
+}
+/*
+#animated6_on{
+	background-image:  url('../PNG/background.png'),linear-gradient(45deg,rgba(0, 38, 255,0.4),rgba(187, 0, 255,0.4)),linear-gradient(225deg,rgba(255, 0, 0,0.6),rgba(118, 255, 0,0.6));
+	background-size: auto, 50% ,50%;
+	animation: Gradient5 2s linear infinite;
+}
+*/	
 @keyframes Gradient { 
 	0%{
 		background-position-x: 200% , 100% , 200%
@@ -58,11 +96,50 @@ html, body{
 	}
 }
 
-
-#animated_off{
-	background-color: #000000;
-	background-image: url('../PNG/background.png');
+@keyframes Gradient2 { 
+	0%{background-position: 0% 50%,50% 50%,0% 50%}
+	50%{background-position: 100% 50%,50% 50%,100% 50%}
+	100%{background-position: 0% 50% ,50% 50%,0% 50%}
 }
+
+@keyframes Gradient3 { 
+	0%{
+		background-image: linear-gradient(90deg ,rgba(0,0,0,0.1) , rgba(12, 214, 255,0.3) ,rgba(0,0,0,0.1), rgba(84, 255, 0,0.3) ,rgba(0,0,0,0.01),   rgba(255, 127, 127,0.3), rgba(0,0,0,0.1)), url('../PNG/background.png'), linear-gradient(270deg, #000000 , #ff0000 ,#000000 ,  #00d4ff ,#000000, #54ff00 ,#000000 );
+	} 
+	50%{
+
+		background-image: linear-gradient(270deg ,rgba(0,0,0,0.1) ,rgba(84, 255, 0,0.3) ,rgba(0,0,0,0.1),rgba(255, 127, 127,0.3) ,rgba(0,0,0,0.01),rgba(12, 214, 255,0.3),rgba(0,0,0,0.1)), url('../PNG/background.png'), linear-gradient(270deg, #000000 , #54ff00 ,#000000 , #ff0000  ,#000000,#00d4ff ,#000000 );
+	}
+	100%{
+
+		background-image: linear-gradient(90deg ,rgba(0,0,0,0.1) ,rgba(255, 127, 127,0.3),rgba(0,0,0,0.1),rgba(84, 255, 0,0.3),rgba(0,0,0,0.01),rgba(12, 214, 255,0.3),rgba(0,0,0,0.1)), url('../PNG/background.png'), linear-gradient(90deg, #000000 ,#ff0000 ,#000000 , #54ff00 ,#000000,#00d4ff ,#000000 );
+	}
+}
+
+@keyframes Gradient4 { 
+	25%{
+		background-image: linear-gradient(90deg ,rgba(0,0,0,0.1) ,rgba(255, 127, 127,0.3),rgba(0,0,0,0.1),rgba(84, 255, 0,0.3),rgba(0,0,0,0.01),rgba(12, 214, 255,0.3),rgba(0,0,0,0.1)), url('../PNG/background.png'), linear-gradient(90deg, #000000 ,#ff0000 ,#000000 , #54ff00 ,#000000,#00d4ff ,#000000 );
+	} 
+	50%{
+		background-image: linear-gradient(90deg ,rgba(0,0,0,0.1) ,rgba(255, 127, 127,0.3),rgba(0,0,0,0.1),rgba(84, 255, 0,0.3),rgba(0,0,0,0.01),rgba(0,0,0,0.1),rgba(12, 214, 255,0.3)), url('../PNG/background.png'), linear-gradient(90deg, #000000 ,#ff0000 ,#000000 , #54ff00 ,#000000,#000000 ,#00d4ff );
+	}
+	75%{
+		background-image: linear-gradient(90deg ,rgba(12, 214, 255,0.3),rgba(0,0,0,0.1) ,rgba(84, 255, 0,0.3),rgba(0,0,0,0.1),rgba(255, 127, 127,0.3),rgba(0,0,0,0.01), rgba(0,0,0,0.1)), url('../PNG/background.png'), linear-gradient(90deg, #00d4ff,#000000 ,#54ff00  ,#000000 ,#ff0000,#000000,#000000  ); 
+	}
+	100%{
+		background-image: linear-gradient(90deg ,rgba(0,0,0,0.1),rgba(0,0,0,0.1) ,rgba(12, 214, 255,0.3),rgba(0,0,0,0.1),rgba(84, 255, 0,0.3),rgba(0,0,0,0.01),rgba(255, 127, 127,0.3)), url('../PNG/background.png'), linear-gradient(90deg, #000000,#000000 ,#00d4ff ,#000000 , #54ff00 ,#000000,#ff0000  );
+	}
+}/*
+@keyframes Gradient5 {
+0%
+{
+background-position: 100%, bottom left,top left;
+}
+100%
+{
+background-position: 100%,top right,bottom right;
+}
+}*/
 
 
 /* Form Wrapper */
@@ -93,6 +170,7 @@ html, body{
 	max-width: initial;
 	margin: initial;
 	transform: translate(10px, 1%);
+	margin-bottom: 1%;
 }
 .dc::after{
 	content: '';
