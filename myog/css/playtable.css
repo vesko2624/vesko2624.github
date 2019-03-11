@@ -2,6 +2,9 @@
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 }
+html{
+	overflow: hidden;
+}
 body{
 	--picture: url("../PNG/225x300.png");
 }
@@ -121,6 +124,9 @@ body{
 
 
 /* -- Player 2 -- */
+#player2{
+	float: right;
+}
 #p2DuelistEnergy::after{
 	-webkit-box-shadow: 2px 4px var(--glow-blur) var(--glow-color);
 	        box-shadow: 2px 4px var(--glow-blur) var(--glow-color);
@@ -170,6 +176,50 @@ body{
 	-webkit-transform: perspective(1150px) translate(40%, -148px) rotateX(60deg) rotateZ(3deg);
 	        transform: perspective(1150px) translate(40%, -148px) rotateX(60deg) rotateZ(3deg);
 }
+
+
+
+
+@media only screen and (max-width:1797px){
+	.mat1v1{
+		transform: perspective(800px) translate(-21%, -331px) rotateX(39deg) rotateY(2deg) rotateZ(-4deg) scale(1.2);
+	}
+}
+@media only screen and (max-width:1598px){
+	.mat1v1{
+		transform: perspective(800px) translate(-26%, -354px) rotateX(35deg) rotateY(2deg) rotateZ(-3deg) scale(1.15);
+	}
+}
+@media only screen and (max-width:1498px){
+	.mat1v1{
+		transform: perspective(800px) translate(-12%, -190px) rotateX(44deg) rotateY(2deg) rotateZ(-3deg) scale(1.15);
+	}
+}
+@media only screen and (max-width:1332px){
+	.mat1v1{
+		transform: perspective(800px) translate(-21%, -190px) rotateX(44deg) rotateY(2deg) rotateZ(-3deg) scale(1.1);
+	}
+}
+@media only screen and (max-width:1200px){
+	.mat1v1{
+		transform: perspective(800px) translate(-15%, -180px) rotateX(45deg) rotateY(2deg) rotateZ(-3deg) scale(1.15);
+	}
+}
+@media only screen and (max-width:1060px){
+	.mat1v1{
+		transform: perspective(800px) translate(-21%, -180px) rotateX(43deg) rotateY(2deg) rotateZ(-3deg) scale(1.1);
+	}
+}
+@media only screen and (max-width:985px){
+	.mat1v1{
+		transform: perspective(800px) translate(-21%, -180px) rotateX(43deg) rotateY(2deg) rotateZ(-3deg) scale(1);
+	}
+}
+
+
+
+
+
 @media only screen and (max-width:866px){
 	.mat1v1{
 		top: -200px !important;

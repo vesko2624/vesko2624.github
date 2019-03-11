@@ -9,13 +9,14 @@
 			#player1hand{
 				flex-grow: 1;
 				text-align: center;
-				line-height: 190px;
+				line-height: 100px;
 				min-width: 350px;
+				transform: scale(2);
 			}
 			header{
-				display: flex;
+				/* display: flex;
 				flex-direction: row;
-				flex-wrap: wrap;
+				flex-wrap: wrap; */
 			}
 			#content{
 				display: flex;
@@ -41,7 +42,6 @@
 				</div>
 				<div id="player1lp" class="lifepoints">4000LP</div>
 			</div>
-			<div id="player1hand">ivan</div>
 			<!--p2_HUD-->
 			<div id="player2" class="player">
 				<div id="player2hp" class="hp"> <div id="hpglow"> <div id="p2DuelistEnergy" class="duelistEnergy"></div> </div></div>
@@ -86,6 +86,7 @@
 				</div>
 			</div>
 			<div id="mat" class="mat1v1">
+				<div id="player1hand">ivan</div>
 				<div class="side" id="matSide2">
 					<div class="inner" id="p1Inner">
 						<div class="deck"></div>
