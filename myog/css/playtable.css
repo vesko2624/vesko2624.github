@@ -3,7 +3,7 @@
 	        box-sizing: border-box;
 }
 html{
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 body{
 	--picture: url("../PNG/225x300.png");
@@ -192,22 +192,27 @@ body{
 }
 @media only screen and (max-width:1498px){
 	.mat1v1{
-		transform: perspective(800px) translate(-12%, -190px) rotateX(44deg) rotateY(2deg) rotateZ(-3deg) scale(1.15);
+		transform: perspective(800px) translate(-12%, -190px) rotateX(44deg) rotateY(2deg) rotateZ(-3deg) scale(1.05);
 	}
 }
 @media only screen and (max-width:1332px){
 	.mat1v1{
-		transform: perspective(800px) translate(-21%, -190px) rotateX(44deg) rotateY(2deg) rotateZ(-3deg) scale(1.1);
+		transform: perspective(800px) translate(-14%, -190px) rotateX(44deg) rotateY(2deg) rotateZ(-3deg) scale(1);
 	}
 }
 @media only screen and (max-width:1200px){
 	.mat1v1{
-		transform: perspective(800px) translate(-15%, -180px) rotateX(45deg) rotateY(2deg) rotateZ(-3deg) scale(1.15);
+		transform: perspective(800px) translate(-18%, -180px) rotateX(45deg) rotateY(2deg) rotateZ(-3deg) scale(1.15);
+	}
+}
+@media only screen and (max-width:1182px){
+	.mat1v1{
+		transform: perspective(800px) translate(-8%, -190px) rotateX(43deg) rotateY(2deg) rotateZ(-3deg) scale(0.9);
 	}
 }
 @media only screen and (max-width:1060px){
 	.mat1v1{
-		transform: perspective(800px) translate(-21%, -180px) rotateX(43deg) rotateY(2deg) rotateZ(-3deg) scale(1.1);
+		transform: perspective(800px) translate(-7%, -180px) rotateX(43deg) rotateY(2deg) rotateZ(-3deg) scale(0.85);
 	}
 }
 @media only screen and (max-width:985px){
@@ -253,7 +258,7 @@ body{
 }
 #mat{
 	display: inline-block;
-	background: pink;
+	/* background: pink; */
 	margin: auto;
 	padding: 20px;
 }
@@ -323,12 +328,13 @@ body{
 }
 #card{
 	background-image: url('../PNG/divBG.png');
-    border-radius: 5px;
-    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+	border-radius: 5px;
+	box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
 	width: 350px;
 	padding: 10px 0;
 	transform: translateY(1%);
 	margin-bottom: 1%;
+	z-index: 1;
 }
 #card_name h1{
     font-size: 2em;
