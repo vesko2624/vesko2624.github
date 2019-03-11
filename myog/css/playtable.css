@@ -363,3 +363,14 @@ body{
 	border-radius: 3px;
 	word-wrap: break-word;
 }
+
+@media only screen and (max-width:734px){
+	#card{
+		transform: translate(0,190px);
+	}
+}
+@media only screen and (max-width:463px){
+	#card{
+		transform: translate(0,226px);
+	}
+}
