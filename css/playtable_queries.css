@@ -42,14 +42,14 @@
 }
 @media only screen and (max-width:882px){
 	.mat1v1{
-		transform: perspective(800px) translate(-12%, 21px) rotateX(42deg) rotateY(2deg) rotateZ(-1deg) scale(0.85);
+		transform: perspective(800px) translate(-12%, 21px) rotateX(42deg) rotateY(2deg) rotateZ(-2deg) scale(0.85);
 	}
 }
-@media only screen and (max-width:865px){
+/* @media only screen and (max-width:865px){
 	.mat1v1{
 		transform: perspective(800px) translate(-21%, 23px) rotateX(42deg) rotateY(2deg) rotateZ(-1deg) scale(0.85);
 	}
-}
+} */
 @media only screen and (max-width:788px){
 	.mat1v1{
 		transform: perspective(800px) translate(-36%, 23px) rotateX(42deg) rotateY(2deg) rotateZ(-2deg) scale(0.8);
