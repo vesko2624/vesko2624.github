@@ -33,7 +33,7 @@ body{
 	--glow-color: red;
 	height: 100%;
 	-webkit-box-shadow: 1px 1px 2px #ffff80, 0 0 25px #ffffb3, 0 0 5px #ffffff;
-	        box-shadow: 1px 1px 2px #ffff80, 0 0 25px #ffffb3, 0 0 5px #ffffff;
+			box-shadow: 1px 1px 2px #ffff80, 0 0 25px #ffffb3, 0 0 5px #ffffff;
 	border-radius: inherit;
 	overflow: hidden;
 }
@@ -99,10 +99,10 @@ body{
 /* -- Player 1 --*/
 #p1DuelistEnergy::after{
 	-webkit-box-shadow: -2px 4px var(--glow-blur) var(--glow-color);
-	        box-shadow: -2px 4px var(--glow-blur) var(--glow-color);
+			box-shadow: -2px 4px var(--glow-blur) var(--glow-color);
 	left: calc(100% - 20px);
 	-webkit-transform: rotate(50deg) translateY(-8%);
-	        transform: rotate(50deg) translateY(-8%);
+			transform: rotate(50deg) translateY(-8%);
 	border-left: 1.5px solid red;
 }
 #player1hp, #p1DuelistEnergy{
@@ -130,10 +130,10 @@ body{
 }
 #p2DuelistEnergy::after{
 	-webkit-box-shadow: 2px 4px var(--glow-blur) var(--glow-color);
-	        box-shadow: 2px 4px var(--glow-blur) var(--glow-color);
+			box-shadow: 2px 4px var(--glow-blur) var(--glow-color);
 	right: calc(100% - 20px);
 	-webkit-transform: rotate(-50deg) translateY(-8%);
-	        transform: rotate(-50deg) translateY(-8%);
+			transform: rotate(-50deg) translateY(-8%);
 	border-right: 1.5px solid red;
 }
 #player2hp, #p2DuelistEnergy{
@@ -185,17 +185,17 @@ body{
 }
 .mat1v1{
 	-webkit-transform: perspective(800px) translate(-12%, -240px) rotateX(52deg) rotateY(3deg) rotateZ(-8deg) scale(1.2);
-	        transform: perspective(800px) translate(-12%, -240px) rotateX(52deg) rotateY(3deg) rotateZ(-8deg) scale(1.2);
+			transform: perspective(800px) translate(-12%, -240px) rotateX(52deg) rotateY(3deg) rotateZ(-8deg) scale(1.2);
 }
 .mat2v2{
 	-webkit-transform: perspective(1150px) translate(40%, -148px) rotateX(60deg) rotateZ(3deg);
-	        transform: perspective(1150px) translate(40%, -148px) rotateX(60deg) rotateZ(3deg);
+			transform: perspective(1150px) translate(40%, -148px) rotateX(60deg) rotateZ(3deg);
 }
 
 
 .spell:nth-child(2), .spell:nth-child(3), .spell:nth-child(4){
 	background-color: blue;
-	background-image:url('../PNG/button.png');
+	background-image: url('../PNG/card_back.jpg');
 	background-size: cover;
 }
 .side, .sZone, .mZone, .inner{
@@ -236,7 +236,7 @@ body{
 
 .sideDeck{
 	-webkit-transform: rotate(90deg);
-	        transform: rotate(90deg);
+			transform: rotate(90deg);
 }
 
 .monster, .spell, #middle{
@@ -251,9 +251,9 @@ body{
 /* CARD */
 .font-glow{
 	background: -webkit-linear-gradient(#ffffff,#ffffb3,#ffff99,#ffff33);
-    text-shadow: 0 0 50px rgba(255, 255, 204, 0.5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	text-shadow: 0 0 50px rgba(255, 255, 204, 0.5);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 #card{
 	background-image: url('../PNG/divBG.png');
@@ -266,7 +266,7 @@ body{
 	z-index: 1;
 }
 #card_name h1{
-    font-size: 2em;
+	font-size: 2em;
 	text-align: center;
 	margin: 0;
 }
@@ -295,4 +295,7 @@ body{
 	border: 1px solid #585858;
 	border-radius: 3px;
 	word-wrap: break-word;
+}
+html{
+	zoom: 0.7;
 }
