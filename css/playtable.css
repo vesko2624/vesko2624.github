@@ -185,7 +185,7 @@ body{
 }
 .mat1v1{
 	-webkit-transform: perspective(800px) translate(-12%, -240px) rotateX(52deg) rotateY(3deg) rotateZ(-8deg) scale(1.2);
-			transform: perspective(800px) translate(-12%, -240px) rotateX(52deg) rotateY(3deg) rotateZ(-8deg) scale(1.2);
+			transform: perspective(800px) translate(-21%, -331px) rotateX(39deg) rotateY(2deg) rotateZ(-4deg) scale(1.2);
 }
 .mat2v2{
 	-webkit-transform: perspective(1150px) translate(40%, -148px) rotateX(60deg) rotateZ(3deg);
@@ -256,14 +256,33 @@ body{
 	-webkit-text-fill-color: transparent;
 }
 #card{
+	position: relative;
 	background-image: url('../PNG/divBG.png');
 	border-radius: 5px;
 	box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
 	width: 350px;
 	padding: 10px 0;
 	transform: translateY(5px);
+	transition: transform 0.4s ease-out, opacity 2s ease-out;
 	margin-bottom: 1%;
 	z-index: 1;
+}
+#hide_butt{
+	position: absolute;
+	display: inline-block;
+	right: 15px;
+	top: 16px;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	color: white;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 25px;
+	z-index: 2;
+	/* background-color: red; */
+	padding-right: 3px; /* Text Position Fix */
+	background: linear-gradient(to bottom right, white 30%, green 60%, red 70%);
 }
 #card_name h1{
 	font-size: 2em;
@@ -375,7 +394,7 @@ body{
 }
 header{
 	/* transition: zoom 3s; */
-	animation: 1s ivan 0s 1 ease-in;
-	zoom: 0.7;
+	/* animation: 1s ivan 0s 1 ease-in;
+	zoom: 0.7; */
 	/* transform: scale(0.7); */
 }

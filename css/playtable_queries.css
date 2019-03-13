@@ -1,5 +1,31 @@
 /* --- MAT QUERIES --- */
 
+
+@media only screen and (min-width:2180px){
+	.mat1v1{
+		transform: perspective(800px) translate(-22%, -200px) rotateX(33deg) rotateY(2deg) rotateZ(-2deg) scale(1.8);
+	}
+}
+@media only screen and (max-width:2180px){
+	.mat1v1{
+		transform: perspective(800px) translate(-22%, -240px) rotateX(33deg) rotateY(2deg) rotateZ(-2deg) scale(1.7);
+	}
+}
+@media only screen and (max-width:2080px){
+	.mat1v1{
+		transform: perspective(800px) translate(-22%, -262px) rotateX(34deg) rotateY(2deg) rotateZ(-2deg) scale(1.6);
+	}
+}
+@media only screen and (max-width:1980px){
+	.mat1v1{
+		transform: perspective(800px) translate(-22%, -319px) rotateX(36deg) rotateY(2deg) rotateZ(-3deg) scale(1.5);
+	}
+}
+@media only screen and (max-width:1880px){
+	.mat1v1{
+		transform: perspective(800px) translate(-22%, -319px) rotateX(36deg) rotateY(2deg) rotateZ(-3deg) scale(1.4);
+	}
+}
 @media only screen and (max-width:1797px){
 	.mat1v1{
 		transform: perspective(800px) translate(-21%, -331px) rotateX(39deg) rotateY(2deg) rotateZ(-4deg) scale(1.2);
@@ -65,7 +91,6 @@
 		transform: perspective(800px) translate(-43%, 23px) rotateX(42deg) rotateY(2deg) rotateZ(-2deg) scale(0.7);
 	}
 	#card{
-		transition: opacity 2s ease-out;
 		opacity: 0;
 	}
 }
