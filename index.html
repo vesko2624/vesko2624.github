@@ -7,16 +7,11 @@
 		<link rel="stylesheet" type="text/css" href="css/playtable.css">
 		<link rel="stylesheet" type="text/css" href="css/playtable_queries.css">
 		<style>
-			#player1hand{
+			.hand{
 				text-align: center;
 				font-size: 40px;
 				line-height: 100px;
 			}
-			/* header{
-				display: flex;
-				flex-direction: row;
-				flex-wrap: wrap;
-			} */
 			#content{
 				display: flex;
 				flex-direction: row;
@@ -87,10 +82,14 @@
 					dddddddddddddddddd
 					dddddddddddddddddd
 					dddddddddddddddddd
+					dddddddddddddddddd
+					dddddddddddddddddd
+					dddddddddddddddddd
+					dddddddddddddddddd
 				</div>
 			</div>
 			<div id="mat" class="mat1v1">
-				<div id="player1hand">ivan</div>
+				<div id="player1hand" class="hand">ivan</div>
 				<div class="side" id="matSide2">
 					<div class="inner" id="p1Inner">
 						<div class="deck"></div>
@@ -191,6 +190,7 @@
 						<div class="deck"></div>
 					</div>
 				</div>
+				<div id="player1hand" class="hand">ivan</div>
 			</div>
 		</div>
 		<script src="js/playtable.js"></script>
