@@ -342,23 +342,6 @@ body{
 	background: #181818;
 	/* border-radius: 6px; */
 }
-/* ::-webkit-scrollbar {
-	width: 20px;
-	height: 20px;
-}
-
-::-webkit-scrollbar-track {
-	border: ridge #b3b300;
-	background: #808000;
-}
-::-webkit-scrollbar-thumb {
-	background: #cccc00;
-	border-left: ridge #b3b300;
-	border-right: ridge #b3b300;
-}
-::-webkit-scrollbar-thumb:hover {
-	background: #e6e600;
-} */
 
 @keyframes ivan{
 	0%{
