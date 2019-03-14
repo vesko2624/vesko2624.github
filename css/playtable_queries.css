@@ -1,11 +1,6 @@
 /* --- MAT QUERIES --- */
 
 
-@media only screen and (min-width:2180px){
-	.mat1v1{
-		transform: perspective(800px) translate(-22%, -200px) rotateX(33deg) rotateY(2deg) rotateZ(-2deg) scale(1.8);
-	}
-}
 @media only screen and (max-width:2180px){
 	.mat1v1{
 		transform: perspective(800px) translate(-22%, -240px) rotateX(33deg) rotateY(2deg) rotateZ(-2deg) scale(1.7);
@@ -40,6 +35,9 @@
 	.mat1v1{
 		transform: perspective(800px) translate(-12%, -190px) rotateX(44deg) rotateY(2deg) rotateZ(-3deg) scale(1.05);
 	}
+	.mat2v2{
+		
+	}
 }
 @media only screen and (max-width:1332px){
 	.mat1v1{
@@ -60,10 +58,16 @@
 	.mat1v1{
 		transform: perspective(800px) translate(-7%, -180px) rotateX(43deg) rotateY(2deg) rotateZ(-3deg) scale(0.85);
 	}
+	.mat2v2{
+		transform: perspective(800px) translate(-87px, -375px) rotateX(40deg) rotateZ(-1deg) scale(0.7);
+	}
 }
 @media only screen and (max-width:985px){
 	.mat1v1{
 		transform: perspective(800px) translate(-21%, -180px) rotateX(43deg) rotateY(2deg) rotateZ(-3deg) scale(0.85);
+	}
+	.mat2v2{
+		/* background: black; */
 	}
 }
 @media only screen and (max-width:882px){
@@ -110,28 +114,25 @@
 		-webkit-transform: perspective(800px) translate(50%, 400px) rotateX(-80deg) rotateZ(3deg);
 				transform: perspective(800px) translate(50%, 400px) rotateX(-80deg) rotateZ(3deg);
 	} */
-	.mat2v2{
+	/* .mat2v2{
 		top: -80% !important;
 		-webkit-transform: perspective(1150px) translate(45%, 400px) rotateX(-70deg) rotateZ(3deg);
 				transform: perspective(1150px) translate(45%, 400px) rotateX(-90deg) rotateZ(-3deg);
-	}
-}
-@media only screen and (max-width:470px){
-	/* .mat1v1{
-		top: -60% !important;
-		right: 30% !important;
-		-webkit-transform: perspective(800px) translate(50%, 400px) rotateX(-80deg) rotateZ(3deg);
-				transform: perspective(800px) translate(50%, 400px) rotateX(-80deg) rotateZ(3deg);
 	} */
-	.mat2v2{
-		top: -100% !important;
-		right: 0% !important;
-		-webkit-transform: perspective(1150px) translate(45%, 400px) rotateX(-70deg) rotateZ(3deg);
-				transform: perspective(1150px) translate(45%, 400px) rotateX(-90deg) rotateZ(-3deg);
-	}
 }
 
 /* --- END MAT QUERIES --- */
+
+/* --- START 2v2 MAT QUERIES */
+
+@media only screen and (max-width:898px){
+	.mat2v2{
+		transform: perspective(800px) translate(-87px, -228px) rotateX(44deg) rotateZ(-1deg) scale(0.65);
+	}
+	
+}
+
+/* --- END 2v2 MAT QUERIES */
 
 /* --- CARD DESCRIPTION QUERIES --- */
 
