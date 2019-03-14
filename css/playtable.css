@@ -204,7 +204,9 @@ body{
 	grid-column-gap: 35px;
 }
 .side{
-	/* margin: auto; */
+	padding: 7px 12px;
+    grid-row-gap: 7px;
+    border-radius: 10px;
 	background: red;
 }
 .side div{
@@ -213,20 +215,8 @@ body{
 #matSide2 .monster, #matSide2 .spell {
 	transform: rotate(180deg);
 }
-.mat1v1 .side{
-	padding: 7px 1%;
-	grid-row-gap: 7px;
-	width: 600px;
-	height: calc(450px * 0.6);
-}
 .mat1v1 .side .twoVtwo{
-	display:none;
-}
-.mat2v2 .side{
-	padding: 7px 1%;
-	grid-row-gap: 7px;
-	width: 600px;
-	height: 450px;
+	display: none;
 }
 .mat2v2 .side .twoVtwo{
 	display: grid;
@@ -423,4 +413,10 @@ header{
 	/* animation: 1s ivan 0s 1 ease-in;
 	zoom: 0.7; */
 	/* transform: scale(0.7); */
+}
+.deck, .extraDeck, .sideDeck,
+.fieldCard, .spell, .graveyard,
+.banished, .monster, .none{
+	width: 52px;
+	height: 70px;
 }
