@@ -280,6 +280,33 @@ body{
 	color: black;
 	transform: rotate(360deg);
 }
+.hide{ /* on click hide butt */
+	transform: translate(-290px, 5px) !important;
+}
+#show_butt{
+	position: absolute;
+	top: 50%;
+	right: -24px; /* -10 - width(Because desc is 10px out of the page) - body padding(6px) + 2(to touch body wall)*/
+	user-select: none;
+
+	cursor: default;
+	min-width: 10px;
+	height: 150px;
+	line-height: 150px; /* Same as height */
+
+	padding: 0px 3px;
+	transform: translate(-24px, -50%);
+	transition: transform 0.3s ease-in;
+	background: #383838;
+	color: white;
+}
+#show_butt:hover{
+	background: #181818;
+}
+.show_butt{
+	display: block !important;
+	transform: translate(0, -50%) !important;
+}
 #card_name h1{
 	font-size: 2em;
 	text-align: center;
